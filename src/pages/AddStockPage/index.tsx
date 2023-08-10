@@ -15,16 +15,14 @@ const FormTextItem = () => {
         unitPrice,
         unitsInStock,
       })
-      .then(res => {
-        console.log('Success', res);
-      })
+      .then(res => {})
       .catch(err => {
         console.log(err);
       });
   };
 
   return (
-    <SafeAreaView>
+    <View>
       <Text style={styles.title}>Add Stock</Text>
       <TextInput
         style={styles.input}
@@ -53,7 +51,7 @@ const FormTextItem = () => {
           <Text style={styles.buttonText}>Add</Text>
         </Pressable>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 

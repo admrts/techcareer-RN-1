@@ -1,11 +1,13 @@
-import {View, Text, SafeAreaView} from 'react-native';
+import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
 import React from 'react';
 import AddStock from './src/pages/AddStockPage';
+import StockList from './src/pages/StockListPage';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <AddStock />
+    <SafeAreaView style={{flex: 1}}>
+      {/* <AddStock /> */}
+      <StockList />
     </SafeAreaView>
   );
 };
