@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Pressable, SafeAreaView, Text, TextInput, View} from 'react-native';
+import {Alert, Pressable, Text, TextInput, View} from 'react-native';
 import styles from './styles';
 import axios from 'axios';
 
@@ -15,7 +15,12 @@ const FormTextItem = () => {
         unitPrice,
         unitsInStock,
       })
-      .then(res => {})
+      .then(res => {
+        Alert.alert('Successfully. Stock Added.');
+        setName('');
+        setUnitPrice('');
+        setUnitsInStock('');
+      })
       .catch(err => {
         console.log(err);
       });
