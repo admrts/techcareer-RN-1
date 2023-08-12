@@ -33,8 +33,8 @@ const StockList = () => {
         renderItem={({item}) => (
           <StockItem
             name={item.name}
-            unitPrice={item.unitPrice.toString()}
-            unitStock={item.unitsInStock.toString()}
+            unitPrice={item.unitPrice}
+            unitStock={item.unitsInStock}
           />
         )}
       />
