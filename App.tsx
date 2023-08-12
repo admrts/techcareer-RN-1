@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import React from 'react';
 import AddStock from './src/pages/AddStockPage';
 import StockList from './src/pages/StockListPage';
